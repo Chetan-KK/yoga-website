@@ -1,0 +1,68 @@
+.Classes .top-section {
+  justify-content: space-around;
+  margin: 3rem 0;
+}
+.Classes .top-section .sub_heading {
+  width: 30rem;
+}
+.all-classes {
+  justify-content: space-around;
+  gap: 2rem;
+  margin: 10rem 3rem;
+}
+.all-classes .class {
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.all-classes .class .design {
+  position: absolute;
+  background-color: var(--secondary-color);
+  height: 150px;
+  width: 150px;
+  z-index: -1;
+  right: 0;
+  transform: skewX(-20deg) translateX(20px);
+}
+.all-classes .class .title {
+  font-size: 1.5rem;
+  color: var(--fc);
+  font-family: var(--ff);
+  font-weight: 900;
+}
+.all-classes .class .desc {
+  width: 15rem;
+}
+@media screen and (max-width: 900px) {
+  .Classes .top-section {
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  .all-classes {
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 5rem;
+    margin: 5rem 3rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .Classes .top-section .sub_heading {
+    width: auto;
+    margin: 0 2rem;
+  }
+  .all-classes .class .design {
+    height: 100px;
+    width: 100px;
+    transform: skewX(-15deg) translateX(15px);
+  }
+  .all-classes .class .title {
+    font-size: 1.2rem;
+  }
+  .all-classes .class .desc {
+    font-size: 0.8rem;
+  }
+}

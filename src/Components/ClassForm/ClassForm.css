@@ -1,0 +1,109 @@
+.ClassForm form {
+  margin: 3rem;
+}
+
+.ClassForm .form {
+  display: grid;
+  gap: 1rem 2rem;
+  margin: 3rem 10rem;
+  grid-template-areas:
+    "fname lname" "age gender" "start type"
+    "time time" "phone email"
+    "submit submit";
+}
+
+.ClassForm .fname {
+  grid-area: fname;
+}
+
+.ClassForm .lname {
+  grid-area: lname;
+}
+
+.ClassForm .age {
+  grid-area: age;
+}
+
+.ClassForm .gender {
+  grid-area: gender;
+}
+.ClassForm .type {
+  grid-area: type;
+}
+
+.ClassForm .time {
+  grid-area: time;
+}
+
+.ClassForm .phone {
+  grid-area: phone;
+}
+.ClassForm .email {
+  grid-area: email;
+}
+.ClassForm .submit {
+  grid-area: submit;
+}
+
+.radio-buttons .gender-grid {
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 0.5rem;
+}
+.radio-buttons .time-grid {
+  gap: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 0.5rem;
+}
+.radio-buttons .button {
+  pointer-events: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 100% !important;
+  background-color: var(--selection-c);
+}
+.radio-buttons input {
+  position: absolute;
+  opacity: 0;
+}
+.radio-buttons input:checked + .button {
+  background-color: var(--secondary-color);
+  color: var(--fc-b);
+}
+.submitButton {
+  background-color: var(--secondary-color) !important;
+}
+.submitButton:hover {
+  box-shadow: 0 0 0 1px var(--fc);
+}
+@media screen and (max-width: 900px) {
+  .ClassForm .form {
+    margin: 3rem 2rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .ClassForm .form {
+    gap: 1rem;
+    margin: 3rem 2rem;
+  }
+  .radio-buttons .button {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .ClassForm .form {
+    grid-template-areas:
+      "fname" "lname" "age" "gender" "start" "type"
+      "time" "phone" "email"
+      "submit";
+  }
+  .radio-buttons .time-grid {
+    gap: 0.3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 0.5rem;
+  }
+}

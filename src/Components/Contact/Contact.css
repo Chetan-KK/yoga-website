@@ -1,0 +1,49 @@
+.Contact {
+  margin: 3rem;
+}
+
+.Contact .form {
+  display: grid;
+  gap: 1rem 2rem;
+  margin: 3rem 10rem;
+  grid-template-areas:
+    "fname lname" "email phone"
+    "message message"
+    "submit submit";
+}
+.Contact .fname {
+  grid-area: fname;
+}
+
+.Contact .lname {
+  grid-area: lname;
+}
+
+.Contact .phone {
+  grid-area: phone;
+}
+.Contact .email {
+  grid-area: email;
+}
+.Contact .message {
+  grid-area: message;
+}
+.Contact .submit {
+  grid-area: submit;
+}
+@media screen and (max-width: 900px) {
+  .Contact .form {
+    margin: 3rem 2rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .Contact {
+    margin: 1rem;
+  }
+  .Contact .form {
+    margin: 3rem 1rem;
+    grid-template-areas:
+      "fname" "lname" "email" "phone" "message"
+      "submit";
+  }
+}

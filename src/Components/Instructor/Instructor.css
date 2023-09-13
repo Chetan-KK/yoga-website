@@ -1,0 +1,25 @@
+.Instructor .images {
+  justify-content: space-around;
+  margin: 6rem;
+}
+.Instructor .images .img-wrapper img {
+  width: 25vw;
+  height: 25vw;
+  object-fit: cover;
+}
+.Instructor .images .img-wrapper:nth-child(1) {
+  transform: translateY(-50px);
+}
+
+.Instructor .images .img-wrapper:nth-child(3) {
+  transform: translateY(50px);
+}
+@media screen and (max-width: 700px) {
+  .Instructor .images {
+    margin: 6rem 1rem;
+    flex-direction: column;
+  }
+  .Instructor .images .img-wrapper img {
+    width: 90vw;
+    height: 90vw;
+}

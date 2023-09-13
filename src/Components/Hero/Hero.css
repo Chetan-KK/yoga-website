@@ -1,0 +1,19 @@
+.Hero {
+  min-height: 30rem;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.Hero .sub_heading {
+  line-height: 1.3rem;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 500px) {
+  .Hero {
+    padding: 0 1rem;
+  }
+  .Hero .sub_heading {
+    line-height: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}

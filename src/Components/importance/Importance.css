@@ -1,0 +1,50 @@
+.Importance {
+  margin: 10rem 0;
+  flex-direction: column;
+}
+.Importance .logo {
+  width: 7rem;
+  margin-bottom: 2rem;
+}
+.Importance .sub_heading {
+  margin-top: 1rem;
+  width: 30rem;
+}
+.Importance .all-importance {
+  margin-top: 3rem;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.Importance .all-importance .single-importance {
+  flex-direction: column;
+}
+.Importance .all-importance .single-importance img {
+  width: 10rem;
+}
+
+.Importance .all-importance .single-importance .info {
+  width: 18rem;
+}
+@media screen and (max-width: 900px) {
+  .Importance .all-importance .single-importance img {
+    width: 5rem;
+  }
+  .Importance .all-importance .single-importance .info {
+    width: auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  .Importance .sub_heading {
+    margin-top: 1rem;
+    width: 80vw;
+  }
+  .Importance .all-importance {
+    margin-top: 3rem;
+    gap: 3rem;
+    flex-direction: column;
+  }
+  .Importance .all-importance .single-importance .info {
+    width: 70vw;
+  }
+}

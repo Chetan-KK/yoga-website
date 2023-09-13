@@ -1,0 +1,23 @@
+.Footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  background-color: var(--secondary-color);
+}
+.Footer .logo {
+  font-size: 1.3rem;
+  color: var(--fc);
+  font-family: var(--ff);
+  font-weight: bolder;
+}
+.Footer .links a {
+  font-size: 1.3rem;
+  color: var(--fc);
+  margin: 0 0.5rem;
+}
+@media screen and (max-width: 500px) {
+  .Footer {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
