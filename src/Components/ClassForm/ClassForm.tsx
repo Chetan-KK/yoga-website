@@ -69,7 +69,7 @@ function ClassForm() {
           setSend(true);
         }
       })
-      .catch((error) => {
+      .catch(() => {
         setErr(true);
       });
   };

@@ -39,7 +39,7 @@ function Contact() {
           setSend(true);
         }
       })
-      .catch((error) => {
+      .catch(() => {
         setErr(true);
       });
   };
