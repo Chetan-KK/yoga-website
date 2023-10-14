@@ -6,7 +6,7 @@ function Instructor() {
       <div className="main_heading center">Meet your Instructor</div>
       <div className="images flex">
         <div className="img-wrapper">
-          <img src="/instructor/1.jpg" alt="" />
+          <img src="/instructor/1.webp" alt="" />
         </div>
 
         <div className="img-wrapper">
@@ -14,7 +14,7 @@ function Instructor() {
         </div>
 
         <div className="img-wrapper">
-          <img src="/instructor/3.jpg" alt="" />
+          <img src="/instructor/3.webp" alt="" />
         </div>
       </div>
     </div>

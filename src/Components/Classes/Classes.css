@@ -33,6 +33,8 @@
   font-weight: 900;
 }
 .all-classes .class .desc {
+  font-weight: 500;
+  color: var(--fc);
   width: 15rem;
 }
 @media screen and (max-width: 900px) {
