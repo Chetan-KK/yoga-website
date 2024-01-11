@@ -37,10 +37,12 @@ function Contact() {
       .then((response) => {
         if (response.data.success == "true") {
           setSend(true);
+          setLoading(false);
         }
       })
       .catch(() => {
         setErr(true);
+        setLoading(false);
       });
   };
 
