@@ -25,7 +25,7 @@ function Navbar() {
       <Link to="hero" spy={true} offset={-100} smooth={true} duration={500}>
         <div className="logo flex">
           <img src={logo} alt="" />
-          <div className="title">Yoga Guru</div>
+          <div className="title">Om Yoga</div>
         </div>
       </Link>
 
